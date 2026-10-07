@@ -1,0 +1,322 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f3f4ed;
+    color: #24221d;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #24221d;
+    text-decoration: none;
+}
+
+.khung{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/* THANH MENU */
+.header {
+    background-color: #f7f4ed;
+    border-bottom: 1px solid #e5dfd3;
+}
+
+.thanh menu {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.logo span{
+    color: #ae4925;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-left: 65px;
+}
+
+.menu a{
+    font-size: 14px;
+}
+
+.tai-khoan{
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.menu a:hover,
+.tai-khoan a:hover {
+    color: #ae4925;
+}
+
+/* ANH NEN */
+.banner{
+    padding: 45px 0 32px;
+    background-color: #e8e0d2;
+
+    background-image:
+        linear-gradient(
+        to right,
+        #f7f4ed 0%,
+        rgba(247, 244, 237, 0.92) 25%,
+        rgba(247, 244, 237, 0.25) 55%,
+        rgba(247, 244, 237, 0) 75%
+    ),
+     url('../../image/khách sạn 1.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* NOI DUNG TREN ANH NEN */
+.gioi-thieu{
+    margin-bottom: 45px;
+}
+
+.dong-nho {
+    margin: 0 0 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.gioi-thieu h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 76px;
+    font-weight: normal;
+    line-height: 1.08;
+    letter-spacing: -3px;
+}
+
+.gioi-thieu h1 span{
+    color: #ae4925;
+}
+
+.mo-ta{
+    max-width: 480px;
+    margin: 22px 0 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* THANH TIM KHACH SAN */
+.tim-phong {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: #faf8f2;
+    border: 1px solid #d8d0c2;
+    border-radius: 3px;
+}
+
+.o-tim {
+    flex: 1;
+    min-width: 0;
+    padding: 5px 22px;
+    border-right: 1px solid #d8d0c2;
+}
+
+.nhan{
+    color: #746e63;
+    font-size: 12px;
+}
+
+.o-tim p{
+    margin: 7px 0 0;
+    font-size: 15px;
+}
+
+.nut-tim {
+    width: 29%;
+    min-height: 65px;
+    margin-left: 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background-color: #42442e;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nut-tim:hover{
+    background-color: #333622;
+}
+
+/* DANH SACH KHACH SAN */
+.danh-sach{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.tieu-de {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+    .tieu-de h2 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    .tieu-de a {
+        padding-bottom: 3px;
+        border-bottom: 1px solid #928979;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .cac-khach-san{
+        display: flex;
+        justify-content: space-between;
+    }
+
+.khach-san {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    .khach-san img {
+        width: 45%;
+        height: 155px;
+        object-fit: cover;
+        border-radius: 2px;
+        background-color: #e2dbcf;
+    }
+
+    .thong-tin{
+        flex: 1;
+    }
+
+        .thong-tin h3 {
+            margin: 0 0 10px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 23px;
+            font-weight: normal;
+        }
+
+        .thong-tin p {
+            margin: 0;
+            color: #696358;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .thong-tin .gia{
+            margin-top: 12px;
+        }
+
+        .gia b{
+            color: #24221d;
+        }
+
+        /* MAN HINH NHO */
+@media (max-width: 768px) {
+    .thanh-menu {
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    .menu {
+        width: 100%;
+        order: 3;
+        margin: 15px 0 0;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .banner{
+        padding-top: 35px;
+    }
+
+    .gioi-thieu h1{
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .dong-nho{
+        font-size: 10px;
+    }
+
+    .mo-ta{
+        max-width: 320px;
+        font-size: 14px;
+    }
+
+    .tim-phong{
+        flex-wrap: wrap;
+    }
+
+    .o-tim{
+        flex:none;
+        width: 50%;
+        padding: 12px;
+    }
+
+    .o-tim:nth-child(2){
+        border-right: none;
+    }
+
+    .o-tim:nth-child(3) {
+        width: 100%;
+        border-top: 1px solid #d8d0c2;
+        border-right: none;
+    }
+
+    .o-tim p{
+        font-size: 14px;
+    }
+
+    .nut-tim{
+        width: 100%;
+        min-height: 52px;
+        margin: 5px 0 0;
+        font-size: 18px;
+    }
+
+    .tieu-de h2{
+        font-size: 23px;
+    }
+
+    .cac-khach-san{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .khach-san{
+        width: 100%;
+        gap: 15px;
+    }
+
+    .khach-san img{
+        height: 135px;
+    }
+
+    .thong-tin h3{
+        font-size: 21px;
+    }
+}

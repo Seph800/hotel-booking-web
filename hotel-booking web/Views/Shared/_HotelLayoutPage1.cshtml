@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>@ViewBag.Title - Demo.</title>
+
+    <link href="~/Content/HotelBookingCSS/Hotel-Booking1.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="khung thanh-menu">
+
+            <a class="logo" href="@Url.Action("Index", "Home")">
+                Demo<span>.</span>
+            </a>
+
+            <div class="menu">
+                <a href="#khach-san">Khách sạn</a>
+                <a href="#">Trải nghiệm</a>
+                <a href="#">Về trú.</a>
+                <a href="#">Blog</a>
+            </div>
+
+            <div class="tai-khoan">
+                <a href="#">Tài khoản</a>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_HotelLayoutPage1.cshtml";
+}
+
+<div class="banner">
+    <div class="khung">
+
+        <!-- GIOI THIEU -->
+        <div class="gioi-thieu">
+            <p class="dong-nho">
+                KHÁCH SẠN GIỮA LÒNG SÀI GÒN
+            </p>
+
+            <h1>
+                Dừng chân<span>.</span><br />
+                Giữa Sài Gòn<span>.</span>
+            </h1>
+
+            <p class="mo-ta">
+                Tìm chốn nghỉ lý tưởng, khám phá nhịp sống thành phố.
+            </p>
+        </div>
+
+
+        <!-- THANH TIM KIEM -->
+        <div class="tim-phong">
+            <div class="o-tim">
+                <span class="nhan">Điểm đến</span>
+                <p>TP. Hồ Chí Minh</p>
+            </div>
+
+            <div class="o-tim">
+                <span class="nhan">Ngày nhận - trả phòng</span>
+                <p>20.10 - 22.10</p>
+            </div>
+
+            <div class="o-tim">
+                <span class="nhan">Số khách</span>
+                <p>2 khách</p>
+            </div>
+
+            <button class="nut-tim" type="button">
+                Tìm khách sạn &rarr;
+            </button>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- DANH SACH KHACH SAN -->
+<div class="khung danh-sach" id="khach-san">
+
+    <div class="tieu-de">
+        <h2>Khách sạn dành cho bạn</h2>
+
+        <a href="#">Xem tất cả &rarr;</a>
+    </div>
+
+    <div class="cac-khach-san">
+
+        <div class="khach-san">
+            <img src="@Url.Content("~/Image/riverside.png")"
+                 alt="Khách sạn Sài Gòn Riverside"/>
+
+            <div class="thong-tin">
+                <h3>Sài Gòn Riverside</h3>
+
+                <p>Bên Sông Sài Gòn</p>
+
+                <p class="gia">
+                    từ <b>1.250.000đ</b> / đêm
+                </p>
+            </div>
+        </div>
+
+        <div class="khach-san">
+            <img src="@Url.Content("~/Image/central city.png")"
+                 alt="Khách sạn The Central Hotel" />
+
+            <div class="thong-tin">
+                <h3>The Central Hotel</h3>
+
+                <p>Trung tâm thành phố</p>
+
+                <p class="gia">
+                    từ <b>1.500.000đ</b> / đêm
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
